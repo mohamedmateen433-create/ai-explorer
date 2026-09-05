@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Explorer | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🤖 AI Explorer</a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="tools.html">AI Tools</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="badge">🚀 Welcome to the future</p>
+
+            <h1>
+                Discover the World of
+                <span>Artificial Intelligence</span>
+            </h1>
+
+            <p class="hero-text">
+                Explore AI, learn how it works, discover useful tools,
+                test your knowledge and create amazing things.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="tools.html" class="button primary">🤖 Explore AI Tools</a>
+                <a href="quiz.html" class="button secondary">🧠 Take the Quiz</a>
+            </div>
+        </div>
+
+        <div class="ai-orb">
+            <div class="orb">AI</div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section">
+        <p class="section-label">ABOUT</p>
+        <h2>What is AI Explorer?</h2>
+
+        <p class="section-intro">
+            AI Explorer is a student-friendly website made to help
+            young learners understand Artificial Intelligence in a
+            simple and interesting way.
+        </p>
+
+        <div class="cards three">
+
+            <div class="card">
+                <div class="card-icon">🔍</div>
+                <h3>Explore</h3>
+                <p>
+                    Discover interesting facts, ideas and technologies
+                    related to Artificial Intelligence.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>Learn</h3>
+                <p>
+                    Understand AI concepts through simple explanations
+                    and examples.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">✨</div>
+                <h3>Create</h3>
+                <p>
+                    Use technology and creativity to build new ideas
+                    and projects.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WHAT IS AI -->
+    <section class="section alternate">
+        <p class="section-label">LEARN AI</p>
+        <h2>What is Artificial Intelligence?</h2>
+
+        <div class="info-box">
+            <div class="big-icon">🧠</div>
+
+            <div>
+                <p>
+                    <strong>Artificial Intelligence (AI)</strong> is
+                    technology that allows computers and machines to
+                    perform tasks that normally require human
+                    intelligence.
+                </p>
+
+                <p>
+                    AI can help computers recognize patterns,
+                    understand language, solve problems, make
+                    predictions and create content.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WHAT CAN AI DO -->
+    <section class="section">
+        <p class="section-label">POSSIBILITIES</p>
+        <h2>What Can AI Do?</h2>
+
+        <div class="cards four">
+
+            <div class="card">
+                <div class="card-icon">💬</div>
+                <h3>Understand Language</h3>
+                <p>
+                    AI can understand and generate human language.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">👁️</div>
+                <h3>Recognize Images</h3>
+                <p>
+                    AI can identify objects and patterns in images.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Create</h3>
+                <p>
+                    AI can help create text, images, ideas and more.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧩</div>
+                <h3>Solve Problems</h3>
+                <p>
+                    AI can analyze information and help solve problems.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DID YOU KNOW -->
+    <section class="section alternate">
+        <p class="section-label">FUN FACTS</p>
+        <h2>💡 Did You Know?</h2>
+
+        <div class="fact-box">
+            <p id="fact">
+                AI is used in many areas including education,
+                transportation, science and entertainment.
+            </p>
+
+            <button class="button primary" onclick="newFact()">
+                🔄 New Fact
+            </button>
+        </div>
+    </section>
+
+
+    <!-- USEFUL APPS -->
+    <section class="section">
+        <p class="section-label">USEFUL WEBSITES</p>
+        <h2>🌐 Explore Popular Apps</h2>
+
+        <div class="app-grid">
+
+            <a href="https://www.google.com/" target="_blank" class="app">
+                🔎
+                <span>Google</span>
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank" class="app">
+                ▶️
+                <span>YouTube</span>
+            </a>
+
+            <a href="https://mail.google.com/" target="_blank" class="app">
+                📧
+                <span>Gmail</span>
+            </a>
+
+            <a href="https://drive.google.com/" target="_blank" class="app">
+                💾
+                <span>Google Drive</span>
+            </a>
+
+            <a href="https://www.canva.com/" target="_blank" class="app">
+                🎨
+                <span>Canva</span>
+            </a>
+
+            <a href="https://chatgpt.com/" target="_blank" class="app">
+                🤖
+                <span>ChatGPT</span>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- SAFETY -->
+    <section class="section alternate">
+        <p class="section-label">AI SAFETY</p>
+        <h2>🛡️ Use AI Responsibly</h2>
+
+        <div class="cards three">
+
+            <div class="card">
+                <div class="card-icon">🔐</div>
+                <h3>Protect Privacy</h3>
+                <p>
+                    Never share passwords or sensitive personal
+                    information with AI tools.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">✅</div>
+                <h3>Check Information</h3>
+                <p>
+                    AI can make mistakes, so check important
+                    information using trusted sources.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎓</div>
+                <h3>Learn With AI</h3>
+                <p>
+                    Use AI to understand subjects and develop
+                    your own ideas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- GOALS -->
+    <section class="section">
+        <p class="section-label">MY MISSION</p>
+        <h2>🚀 Explore • Learn • Create</h2>
+
+        <div class="mission">
+
+            <div>
+                <strong>01</strong>
+                <h3>Explore</h3>
+                <p>Discover new AI technologies.</p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <h3>Learn</h3>
+                <p>Understand how AI works.</p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <h3>Create</h3>
+                <p>Turn ideas into projects.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CREATOR -->
+    <section class="creator">
+        <div class="creator-avatar">M</div>
+
+        <p class="section-label">CREATOR</p>
+
+        <h2>Mohamed Mateen - 6C</h2>
+
+        <p>
+            Student • AI Explorer • Coder • Creative Learner
+        </p>
+
+        <div class="creator-tags">
+            <span>AI</span>
+            <span>Coding</span>
+            <span>Creativity</span>
+            <span>Learning</span>
+        </div>
+
+        <h3>“Explore • Learn • Create”</h3>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>🤖 AI Explorer</p>
+    <p>Created by <strong>Mohamed Mateen - 6C</strong></p>
+</footer>
+
+
+<script>
+
+const facts = [
+    "AI is used in education, science, transportation and entertainment.",
+    "Some AI systems can recognize objects in pictures.",
+    "AI can help people analyze very large amounts of information.",
+    "Voice assistants use AI to understand spoken language.",
+    "AI can help programmers find and fix problems in code.",
+    "AI tools can be useful for brainstorming and learning.",
+    "AI does not think exactly like a human brain.",
+    "AI systems learn patterns from data."
+];
+
+function newFact() {
+    const random = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").textContent = facts[random];
+}
+
+</script>
+
+</body>
+</html>

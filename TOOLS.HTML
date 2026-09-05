@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools | AI Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🤖 AI Explorer</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tools.html" class="active">AI Tools</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+        <p class="badge">🧰 AI TOOLBOX</p>
+
+        <h1>Explore AI Tools</h1>
+
+        <p>
+            Discover useful tools for learning, creativity,
+            research, communication and productivity.
+        </p>
+
+        <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="🔍 Search tools..."
+            onkeyup="searchTools()"
+        >
+    </section>
+
+
+    <section class="section">
+
+        <div class="tools-grid" id="tools">
+
+            <div class="tool-card">
+                <div class="tool-icon">🤖</div>
+                <h2>ChatGPT</h2>
+                <p>
+                    Ask questions, learn concepts, brainstorm ideas
+                    and get help understanding topics.
+                </p>
+                <a href="https://chatgpt.com/" target="_blank">
+                    Open ChatGPT →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">🎨</div>
+                <h2>Canva</h2>
+                <p>
+                    Create presentations, posters, graphics,
+                    videos and school projects.
+                </p>
+                <a href="https://www.canva.com/" target="_blank">
+                    Open Canva →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">🔎</div>
+                <h2>Google</h2>
+                <p>
+                    Search for information, websites and
+                    educational resources.
+                </p>
+                <a href="https://www.google.com/" target="_blank">
+                    Open Google →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">▶️</div>
+                <h2>YouTube</h2>
+                <p>
+                    Find educational videos, tutorials and
+                    interesting lessons.
+                </p>
+                <a href="https://www.youtube.com/" target="_blank">
+                    Open YouTube →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">📧</div>
+                <h2>Gmail</h2>
+                <p>
+                    Send and receive emails and communicate online.
+                </p>
+                <a href="https://mail.google.com/" target="_blank">
+                    Open Gmail →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">📄</div>
+                <h2>Google Docs</h2>
+                <p>
+                    Create documents, assignments and reports.
+                </p>
+                <a href="https://docs.google.com/" target="_blank">
+                    Open Docs →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">📊</div>
+                <h2>Google Sheets</h2>
+                <p>
+                    Organize information, tables and data.
+                </p>
+                <a href="https://sheets.google.com/" target="_blank">
+                    Open Sheets →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">📽️</div>
+                <h2>Google Slides</h2>
+                <p>
+                    Create presentations for school and projects.
+                </p>
+                <a href="https://slides.google.com/" target="_blank">
+                    Open Slides →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">💾</div>
+                <h2>Google Drive</h2>
+                <p>
+                    Store and organize your important files.
+                </p>
+                <a href="https://drive.google.com/" target="_blank">
+                    Open Drive →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">🌍</div>
+                <h2>Google Translate</h2>
+                <p>
+                    Translate text between different languages.
+                </p>
+                <a href="https://translate.google.com/" target="_blank">
+                    Open Translate →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">🗺️</div>
+                <h2>Google Maps</h2>
+                <p>
+                    Explore places and find directions.
+                </p>
+                <a href="https://maps.google.com/" target="_blank">
+                    Open Maps →
+                </a>
+            </div>
+
+
+            <div class="tool-card">
+                <div class="tool-icon">📅</div>
+                <h2>Google Calendar</h2>
+                <p>
+                    Organize events, reminders and important dates.
+                </p>
+                <a href="https://calendar.google.com/" target="_blank">
+                    Open Calendar →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>🤖 AI Explorer — <strong>Explore • Learn • Create</strong></p>
+    <p>Created by <strong>Mohamed Mateen - 6C</strong></p>
+</footer>
+
+
+<script>
+
+function searchTools() {
+
+    const search =
+        document.getElementById("search").value.toLowerCase();
+
+    const cards =
+        document.querySelectorAll(".tool-card");
+
+    cards.forEach(card => {
+
+        const text =
+            card.textContent.toLowerCase();
+
+        if (text.includes(search)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
